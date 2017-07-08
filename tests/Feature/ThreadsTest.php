@@ -19,10 +19,17 @@ class ThreadsTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function a_user_can_browse_a_theraed()
+    public function a_user_can_see_all_threads()
     {
+        $this->markTestIncomplete('Still need to test actual content');
         $respones = $this->get('/threads');
         $respones->assertSuccessful();
+    }
+
+    /** @test */
+    public function a_user_can_see_a_thread()
+    {
+        $this->markTestIncomplete('Todo:: write this test');
     }
 
 }
